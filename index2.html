@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clickable Background</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        .background {
+            background-image: url('assets/background.jpg'); /* Replace with your image path */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            width: 100%;
+            cursor: pointer; /* Makes it clear the area is clickable */
+        }
+    </style>
+</head>
+<body>
+    <div class="background" onclick="window.location.href='https://www.google.com';">
+        <!-- Your page content here -->
+    </div>
+</body>
+</html>

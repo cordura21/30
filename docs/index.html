@@ -3,34 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cordura toca el viernes 18 en Liverpoolclub</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Clickable Background</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        .background {
+            background-image: url('assets/background.jpg'); /* Replace with your image path */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            width: 100%;
+            cursor: pointer; /* Makes it clear the area is clickable */
+        }
+    </style>
 </head>
 <body>
-    <!-- Background Video or Image -->
-    <div class="background">
-        <!-- Use <video> for video background, comment out if using image -->
-        <!-- <video autoplay muted loop id="bg-video">
-            <source src="assets/background.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <!-- Use this for image background instead, uncomment to use -->
-         <img src="assets/background.jpg" alt="Background" class="bg-image"> -->
+    <div class="background" onclick="window.location.href='https://alpogo.com/evento/cordura-30-anos-en-liverpool-20557?fbclid=PAZXh0bgNhZW0CMTEAAafmKkRZ_R7w1e8Xa0hBhndoARkyE_XVfTwuf2uOdM0WqlPEAKy1jkFw10lj2A_aem_B3nhRZtZReDwWbF4dU8RiQ';">
+        <!-- Your page content here -->
     </div>
+</body>
+</html>
 
-    <!-- Banner Container -->
-    <div class="banner-container">
-      
-       <a href="https://www.youtube.com/playlist?list=PLFR3_WefcZFTdv9Dgg7meG0JcVu6GhNi1&si=lBR8D-WHEZFtZc3i&fbclid=PAZXh0bgNhZW0CMTEAAadgxSi_2U1fCTrKrt-uLIs0Ma8IAY7xfqBqTbKX2UchsY0Wb2VUTrT9Y71qSg_aem_d6XPlFuCYMr_PnwzXTlG1Q" class="banner" id="banner2">
-            <span>Escuchá el Disco</span>
-            
-        <a href="https://alpogo.com/evento/cordura-30-anos-en-liverpool-20557?fbclid=PAZXh0bgNhZW0CMTEAAafmKkRZ_R7w1e8Xa0hBhndoARkyE_XVfTwuf2uOdM0WqlPEAKy1jkFw10lj2A_aem_B3nhRZtZReDwWbF4dU8RiQ" class="banner" id="banner1">
-            <span>Comprá Entradas</span>
-        </a>
-
-        </a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clickable Background with Floating Button</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        .background {
+            background-image: url('assets/background.jpg'); /* Replace with your image path */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            width: 100%;
+            cursor: pointer;
+        }
+        /* Floating button styles */
+        .floating-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #1DA1F2; /* X's brand color */
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            pointer-events: auto; /* Ensure button is clickable */
+            z-index: 1000; /* Ensure button is above other elements */
+        }
+        .floating-button:hover {
+            background-color: #0d8beb; /* Slightly darker on hover */
+        }
+        /* Prevent pointer events on child elements from being ignored */
+        .content {
+            pointer-events: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="background" id="background">
+        <div class="content">
+            <!-- Other page content can go here -->
+            <button class="floating-button" onclick="window.location.href='https://www.youtube.com/playlist?list=PLFR3_WefcZFTdv9Dgg7meG0JcVu6GhNi1';">Escuchá el Disco</button>
+        </div>
     </div>
-
-    <script src="script.js"></script>
+    <script>
+        document.getElementById('background').addEventListener('click', function(event) {
+            // Only redirect to Google if the click is on the background div, not its children
+            if (event.target === this) {
+                window.location.href = 'https://alpogo.com/evento/cordura-30-anos-en-liverpool-20557?fbclid=PAZXh0bgNhZW0CMTEAAafmKkRZ_R7w1e8Xa0hBhndoARkyE_XVfTwuf2uOdM0WqlPEAKy1jkFw10lj2A_aem_B3nhRZtZReDwWbF4dU8RiQ';
+            }
+        });
+    </script>
 </body>
 </html>
