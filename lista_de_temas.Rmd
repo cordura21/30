@@ -18,35 +18,52 @@ class: center, middle
 layout: true
 
 ---
-# This is Cordura
+# This is 
+(empieza después del segundo ‘This Is’ del video)
+Termina en E
 ---
 # Los Res
+Trastes  10 / 8 en primera  y 12 después
+
 ---
 # Totalizer
 ---
 # De las Olas
+D | Bm | Em | C [ (G | D )/  (G | A) ]
 ---
 # La Ciudad de Los Gatos Perdidos
 ---
 # Cómo Te Curás
+D | A# | D | A
 ---
 # El Mejor Cielo
 ---
 # En Lugares Secretos
 ---
 # Tu Caramelo
+Parte diferente: F# | B | A | F#
+
 ---
 # No Vengas A Mí
 ---
 # Azul el Mar
 ---
 # Sudando Sangre
+Está en A (day Tripper)
 ---
 # El 16
+Solo:
+LaM7 | Sim | Fa#m | Sol#m
+LaM7 | Sim | Re | MiM7
+
 ---
 # El Quince
+Parte: G# | G | C y G# | G | A# | C
+
 ---
 # Oh Oh Oh
+Está en D, empieza en la 3 Mayor, 2da y 5ta en cuerda de arriba
+
 ---
 # Nicole (Déjate Querer)
 ---
