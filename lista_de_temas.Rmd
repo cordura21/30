@@ -1,7 +1,4 @@
 ---
-title: "Lista de Temas Liverpool"
-subtitle: "CORDURA"
-
 output:
   xaringan::moon_reader:
     css: xaringan-themer.css
