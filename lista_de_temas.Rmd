@@ -6,18 +6,22 @@ output:
   xaringan::moon_reader:
     css: xaringan-themer.css
 ---
+
+
+
 ```{r xaringan-themer, include=FALSE, warning=FALSE}
 library(xaringanthemer)
 style_solarized_light(background_color = 'black',
                       header_color = 'white',
-                      text_font_google = google_font('Roboto'))
+                      # text_font_google = google_font('Roboto'),
+                        base_font_size = "40px",)
 ```
+
 class: center, middle
 layout: true
 
 ---
 # This is Cordura
-## Empieza después del segundo 'THIS IS...' del Video
 ---
 # Los Res
 ---
