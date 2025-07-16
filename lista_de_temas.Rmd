@@ -18,7 +18,7 @@ class: center, middle
 layout: true
 
 ---
-# This is 
+# This is Cordura
 (empieza después del segundo ‘This Is’ del video)
 Termina en E
 ---
