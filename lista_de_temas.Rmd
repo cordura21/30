@@ -11,7 +11,7 @@ library(xaringanthemer)
 style_solarized_light(background_color = 'black',
                       header_color = 'white',
                       # text_font_google = google_font('Roboto'),
-                        base_font_size = "40px",)
+                        base_font_size = "40px")
 ```
 
 class: center, middle
